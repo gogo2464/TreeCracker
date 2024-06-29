@@ -1,10 +1,23 @@
 package me.cortex.TreeCracker.LCG;
 
+/**
+ * Class to represent a Comparaison for LCG. 
+ * 
+*/
 public class LcgComparison<T> {
     public T comparingTo;
     public Type comparingType;
     boolean configured = false;
 
+
+    /**
+     * Set this.comparingTo attribute of current class to the first argument compraingTo and comparingType attribute to Type.greaterThan.
+     * 
+     * 
+     * Argument 1, comparingTo: value set for this.comparingTo
+     * 
+     * returns: nothing.
+    */
     public void greaterThan(T comparingTo) {
         if (configured)
             throw new IllegalStateException("LcgComparison already configured");
